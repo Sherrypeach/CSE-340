@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Service Projects</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <h1>Service Projects</h1>
+  <ul>
+    <% projects.forEach(function(project) { %>
+      <li>
+        <h2><%= project.name %></h2>
+        <p><%= project.description %></p>
+        <p>Date: <%= project.project_date %></p>
+      </li>
+    <% }); %>
+  </ul>
+  <p><a href="/">Home</a> | <a href="/organizations">Organizations</a> | <a href="/categories">Categories</a></p>
+</body>
+</html>
